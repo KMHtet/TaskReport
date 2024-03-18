@@ -53,11 +53,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <?php echo form_open('login/process_login'); ?>
+        <form action="<?php echo site_url('login/process_login'); ?>" method="post">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
-        <?php echo form_close(); ?>
+        </form>
     </div>
 </body>
 </html>

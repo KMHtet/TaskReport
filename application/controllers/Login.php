@@ -22,7 +22,7 @@ class Login extends CI_Controller {
 	public function __construct() {
         parent::__construct();
 		$this->load->helper('form');
-		$this->load->model('login_model');
+		$this->load->helper('url');
         // Load necessary libraries and models here
     }
 
@@ -32,7 +32,7 @@ class Login extends CI_Controller {
 	}
 
 	public function process_login() {
-		echo "Login successful!";
+		// echo "Login successful!";
         // $username = $this->input->post('username');
         // $password = $this->input->post('password');
 
